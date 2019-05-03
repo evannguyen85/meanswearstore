@@ -4,6 +4,14 @@ const menu = document.getElementById('menu');
 const mainBody = document.getElementById('main-body');
 const menuMobile = document.getElementById("menu-mobile");
 const btnClose = document.getElementsByClassName("close")[0];
+const imgs = document.querySelectorAll('#new-arrival img');
+// console.log(imgs);
+
+for(let i = 0; i < imgs.length; i++) {
+    imgs[i].addEventListener('mouseover', function(){
+        console.log(imgs[i]);
+    }, false);
+}
 
 window.addEventListener('scroll', function(){
     const mainNavbarHeight = mainNavbar.clientHeight;
