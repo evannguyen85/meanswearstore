@@ -173,6 +173,76 @@ section h4 {
     color: #ea1c2c;
 }
 
+.item-1 {
+    background-color: #f8f9fa;
+    animation: right 1s both;
+}
+
+@keyframes right {
+    from {
+        left: -150px;
+        opacity: 0;
+    }
+
+    to {
+        left: 0;
+        opacity: 1;
+    }
+}
+
+.item-2 {
+    background-color: #f8f9fa;
+    animation: down 1s both;
+}
+
+@keyframes down {
+    from {
+        top: -150px;
+        opacity: 0;
+    }
+
+    to {
+        top: 0;
+        opacity: 1;
+    }
+}
+
+.item-3 {
+    background-color: #f8f9fa;
+    animation: up 1s both;
+}
+
+@keyframes up {
+    from {
+        bottom: -150px;
+        opacity: 0;
+    }
+
+    to {
+        bottom: 0;
+        opacity: 1;
+    }
+}
+.item-4 {
+    background-color: #f8f9fa;
+    animation: left 1s both;
+}
+
+@keyframes left {
+    from {
+        right: -150px;
+        opacity: 0;
+    }
+
+    to {
+        right: 0;
+        opacity: 1;
+    }
+}
+
+
+
+
 .navbar.scrolled {
     background: white;
     transition: background 0.2s ease-in-out, box-shadow 0.2s ease-in-out, -webkit-box-shadow 0.2s ease-in-out;
@@ -208,7 +278,7 @@ section h4 {
 }
 
 .fixheight {
-    height: 275px;
+    height: 225px;
 }
 
 .fixheight img {
@@ -222,9 +292,19 @@ section h4 {
     cursor: pointer;
 }
 
-@media only screen and (min-width:768px) {
+.more-product:hover {
+    background-color: #f7ae8e;
+    border: none;
+    color: inherit;
+}
+
+.before {
+    font-size: 0.7rem;
+}
+
+@media only screen and (min-width:600px) {
     .fixheight {
-        height: 325px;
+        height: 350px;
     }
 }
 
@@ -233,10 +313,24 @@ section h4 {
         width: 160px;
         height: 160px;
     }
+
+    .fixheight {
+        height: 425px;
+    }
 }
 
 @media only screen and (min-width: 992px) {
     #mainNavbar {
         font-size: 1.2rem;
+    }
+
+    .fixheight {
+        height: 275px;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .bottom {
+        border-bottom: 1px solid #dee2e6;
     }
 }
