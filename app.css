@@ -173,6 +173,10 @@ section h4 {
     color: #ea1c2c;
 }
 
+.responsive {
+    min-width: 100%;
+}
+
 .item-1 {
     background-color: #f8f9fa;
     animation: right 1s both;
